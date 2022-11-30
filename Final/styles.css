@@ -1,0 +1,24 @@
+#header{
+    background-color: white;
+    height: 8vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#contact{
+    grid-column: 2;
+    color: #4BB3FD;
+    padding-top: 2vh;
+}
+
+#myfav{
+    grid-column: 3;
+    color: #4BB3FD;
+    padding-top: 2vh;
+}
+
+#trade{
+    grid-column: 6;
+    color: #4BB3FD;
+    padding-top: 2vh;
+}
