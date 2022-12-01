@@ -47,3 +47,20 @@ body{
     font-size: 30px;
     text-align: center;
 }
+
+#home{
+    background-color: #e1d89f;
+    height: 50vh;
+    margin-top: 1vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#homeimg{
+    height: 90%;
+    background-image: url(img/home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
