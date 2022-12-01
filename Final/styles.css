@@ -1,24 +1,49 @@
+body{
+    background-color: #A56565 !important;
+}
 #header{
     background-color: white;
-    height: 8vh;
+    height: 6vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 20vw 20vw 30vw 1fr;
 }
 
 #contact{
     grid-column: 2;
     color: #4BB3FD;
-    padding-top: 2vh;
+    padding-top: 1.5vh;
+    font-size: 2vh;
 }
 
 #myfav{
     grid-column: 3;
     color: #4BB3FD;
-    padding-top: 2vh;
+    padding-top: 1.5vh;
+    font-size: 2vh;
 }
 
 #trade{
-    grid-column: 6;
+    grid-column: 4;
     color: #4BB3FD;
-    padding-top: 2vh;
+    padding-top: 1.5vh;
+    font-size: 2vh;
+}
+
+#user{
+    height: 5vh;
+    justify-self: end;
+    margin: 1vh;
+}
+#car{
+    height: 6vh;
+}
+
+#top{
+    background-color: #00487c;
+    color: black;
+    margin-top: 6vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 30px;
+    text-align: center;
 }
