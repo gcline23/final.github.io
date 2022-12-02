@@ -5,26 +5,23 @@ body{
 #header{
     background-color: white;
     height: 6vh;
-    display: grid;
-    grid-template-columns: 1fr 20vw 20vw 30vw 1fr;
+    display: flex;
+    justify-content: space-between;
 }
 
 #contact{
-    grid-column: 2;
     color: #4BB3FD;
     padding-top: 1.5vh;
     font-size: 2vh;
 }
 
 #myfav{
-    grid-column: 3;
     color: #4BB3FD;
     padding-top: 1.5vh;
     font-size: 2vh;
 }
 
 #trade{
-    grid-column: 4;
     color: #4BB3FD;
     padding-top: 1.5vh;
     font-size: 2vh;
@@ -48,8 +45,8 @@ body{
     margin-right: 60px;
     font-size: 30px;
     text-align: center;
-    padding-top: 3vh;
     border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
 }
 
 #home{
@@ -99,12 +96,13 @@ body{
 }
 
 .pic {
-    background-image: url("img/09-2018-ford-f-150-limited.webp");
+    background-image: url("img/silverado.jpg");
+    border-radius: 25px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     grid-row: 1/2;
-    background-color: tan;
+    background-color: #e1d89f;
     margin: 10px;
 }
 
@@ -135,12 +133,13 @@ a:link{
 .tradecontainer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 .tradeheader {
     grid-column: 1/2;
     grid-row: 1/2;
+    padding-bottom: 30px;
 }
 
 .tradeform {
@@ -148,6 +147,10 @@ a:link{
     padding: 10px;
     grid-column: 1/2;
     grid-row: 2/3;
+}
+
+.traderesults {
+    text-align: center;
 }
 
 #homesearch{
@@ -171,6 +174,10 @@ a:link{
     padding-top: 120px;
 }
 
+.tradeimage {
+    background-image: url(img/key.jpeg);
+}
+
 .search-button{
     color: white;
 }
@@ -178,39 +185,87 @@ a:link{
 .contactpage {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 .contactbody {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 20px
+    padding: 20px;
+    grid-gap: 10px;
   
 }
 
 .contactmap {
     grid-column: 1/2;
     grid-row: 1/2;
-    background-image: url(img/Map.jpg);
-    height: 500px;
-    width: 500px;
-    background-size: contain;
+    background-image: url(img/Map.PNG);
+    background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 10px;
+    text-align: center;
     
 }
 
-.contactmaptext {
+.contactmaptextbox {
     grid-column: 1/2;
     grid-row: 2/3;
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     
+}
+
+.contactmaptextheader {
+    text-align: center;
+    font-size: 30px;
+}
+
+.contactmaptextbody {
+    text-align: center;
+}
+
+.hourstextbox {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+}
+
+.hourstextheader {
+    text-align: center;
+    font-size: 30px;
+}
+
+.hourstextbody {
+    text-align: center;
+}
+
+.phonetextbox {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.phonetextheader {
+    text-align: center;
+    font-size: 30px;
+}
+
+.phonetextbody {
+    text-align: center;
 }
 
 .containerbox {
     display: grid;
-    grid-template-rows: 1fr 1fr 10fr;
+    grid-template-rows: 1fr 2fr 10fr 2fr;
     grid-template-columns: 3fr 2fr;
     height: 100vh;
+    grid-gap: 6px;
 }
 
 .headingbox {
@@ -221,19 +276,80 @@ a:link{
 .carname {
     grid-row: 2/3;
     grid-column: 1/3;
-    background-color: rgb(83, 188, 236);
+    background-color: #00487c;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    font-family: "Monserrat", sans-serif;
 }
 
 .boxleft {
     grid-row: 3/4;
     grid-column: 1/2;
-    background-color: tan;
+    background-color: #e1d89f;
+    grid-template-rows: 4fr 1fr;
+    border-radius: 25px;
+    margin-left: 15px;
 }
 
 .boxright {
     grid-row: 3/4;
     grid-column: 2/3;
-    background-color: green;
+    background-color: #e1d89f;
+    padding: 20px;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+.carimage {
+    height: 100%;
+    grid-row: 1/2;
+    background-image: url("img/raptor.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+}
+
+.carinfo {
+    padding: 20px;
+    color: black;
+    grid-row: 4/5;
+    grid-column: 1/3;
+    background-color: #e1d89f;
+    border-radius: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.basebackground {
+    background-color: #e1d89f;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+.basebackground2 {
+    background-color: #e1d89f;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+.contactheader {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-bottom: 30px;
+}
+
+.headertext {
+    font-family: "Monserrat", sans-serif;
+}
+
+.bodytext {
+    font-family: "Open Sans", sans-serif;
 }
 
 @media screen and (min-width: 0px) and (max-width: 750px) {
@@ -271,12 +387,11 @@ a:link{
     }
     
     .pic {
-        background-image: url("img/09-2018-ford-f-150-limited.webp");
+        background-image: url("img/silverado.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         grid-row: 1/2;
-        background-color: tan;
     }
     
     .bottom {
@@ -288,5 +403,109 @@ a:link{
         height: 100%;
         font-size: 65px;
     }
-    
 }
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    .containerbox {
+        display: grid;
+        grid-template-rows: 1fr 2fr 5fr 4fr 4fr;
+        grid-template-columns: 1fr;
+        height: 100vh;
+        grid-gap: 6px;
+    }
+    
+    .headingbox {
+        grid-row: 1/2;
+    }
+    
+    .carname {
+        grid-row: 2/3;
+        background-color: #00487c;
+        font-size: 45px;
+        color: white;
+        text-align: center;
+    }
+
+    .smallscreenpic {
+        margin-right: 15px;
+        border-radius: 25px;
+        grid-row: 3/4;
+        height: 60vh;
+        background-image: url("img/raptor.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .boxright {
+        grid-row: 5/6;
+        background-color: #e1d89f;
+    }
+    
+    .carinfo {
+        padding: 20px;
+        color: black;
+        grid-row: 4/5;
+        background-color: #e1d89f;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 850px) {
+    
+    .contactbody {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding: 20px;
+        grid-gap: 10px;
+    }
+
+    .contactmap {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-image: url(img/Map.PNG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        text-align: center;
+        
+    }
+    
+    .contactmaptextbox {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .hourstextbox {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .phonetextbox {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactheader {
+        grid-column: 1/2;
+        grid-row: 1/2;
+   }
+
+   .basebackground2 {
+    background-color: #e1d89f;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: -85px
+}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@300&display=swap');
