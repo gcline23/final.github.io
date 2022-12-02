@@ -10,11 +10,12 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
 <body>
     <div class = "grid-column-layout">
         <div class = "top-search">
             <div id="header">
-                <img id="car" src="img/car.png" alt="car">
+                <a href="index.html"><img id="car" src="img/car.png" alt="car"></a>
                 <a href="contact.html" id="contact">Contact us</a>
                 <a href="favorites.html" id="myfav">My Favorites</a>
                 <a href="trade.html" id="trade">Value your Trade In</a>
@@ -22,17 +23,27 @@
             </div>
         </div>
         <div class = "left-box">
-            <div class="first child">Filter</div>
-            <div class="second child">Make</div>
-            <div class="third child">Model</div>
-            <div class="fourth child">Body Type</div>
-            <div class="fifth child">Location</div>
-            <div class="sixth child">Mileage</div>
-            <div class="seventh child">Drivetrain</div>
+            <form action="results.html">
+                <label for="name">Make:</label><br>
+                <input type="text" id="text" name="text" value=""><br><br><br>
+                <label for="name">Model:</label><br>
+                <input type="text" id="text" name="text" value=""><br><br><br>
+                <label for="name">Year:</label><br>
+                <input type="text" id="text" name="text" value=""><br><br><br>
+                <label for="name">Mileage:</label><br>
+                <input type="text" id="text" name="text" value=""><br><br><br>
+                <label for="name">Drivetrain:</label><br>
+                <input type="text" id="text" name="text" value=""><br><br><br>
+                <label for="name">Color</label><br>
+                <input type="email" id="email" name="email" value=""><br><br><br>
+                <button class="btn btn-sm btn-primary">Filter</button>
+            </form>
         </div>
         <div class = "right-box">
             <div class="pic"></div>
-            <div class="bottom">Search</div>
+            <a href="results.html" id="results">
+                <div class="bottom">See Results</div>
+            </a>
         </div>
     </div>
 </body>

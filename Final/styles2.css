@@ -1,0 +1,126 @@
+.grid-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 4fr;
+  }
+
+.seven {
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    padding: 12px;
+}
+
+.kid {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #e1d89f;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 5px;
+}
+
+.one {
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-rows: 1fr 20fr 1fr;
+    background-color: grey;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.two {
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-rows: 1fr 20fr 1fr;
+    background-color: grey;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.three {
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-rows: 1fr 20fr 1fr;
+    background-color: grey;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.four {
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-rows: 1fr 20fr 1fr;
+    background-color: grey;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.five {
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-rows: 1fr 20fr 1fr;
+    background-color: grey;
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.six {
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-rows: 1fr 20fr 1fr;
+    background-color: grey;
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+body{
+    background-color: gray !important;
+}
+
+#header{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color: white;
+    height: 6vh;
+    display: grid;
+    grid-template-columns: 1fr 20vw 20vw 30vw 1fr;
+}
+
+#contact{
+    grid-column: 2;
+    color: #4BB3FD;
+    padding-top: 1.5vh;
+    font-size: 2vh;
+}
+
+#myfav{
+    grid-column: 3;
+    color: #4BB3FD;
+    padding-top: 1.5vh;
+    font-size: 2vh;
+}
+
+#trade{
+    grid-column: 4;
+    color: #4BB3FD;
+    padding-top: 1.5vh;
+    font-size: 2vh;
+}
+
+#user{
+    height: 5vh;
+    justify-self: end;
+    margin: 1vh;
+}
+#car{
+    height: 6vh;
+}
+
+a:link{
+    text-decoration: none;
+}
