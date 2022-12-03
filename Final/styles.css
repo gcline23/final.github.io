@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@300&display=swap');
+
 body{
     background-color: gray !important;
 }
@@ -133,7 +135,7 @@ a:link{
 .tradecontainer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr;
 }
 
 .tradeheader {
@@ -168,10 +170,14 @@ a:link{
     grid-template-rows: 1fr 3fr 10fr 2fr;
     grid-gap: 15px;
 }
-
+#paygrid{
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    grid-gap: 15px;
+}
 .tradetext {
     font-size: 75px;
-    padding-top: 120px;
+    padding-top: 40px;
 }
 
 .tradeimage {
@@ -280,7 +286,7 @@ a:link{
     font-size: 45px;
     color: white;
     text-align: center;
-    font-family: "Monserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .boxleft {
@@ -328,6 +334,7 @@ a:link{
     margin-left: 60px;
     margin-right: 60px;
     margin-top: 20px;
+    height: 400px;
 }
 
 .basebackground2 {
@@ -336,6 +343,15 @@ a:link{
     margin-left: 60px;
     margin-right: 60px;
     margin-top: 20px;
+}
+
+.basebackground3 {
+    background-color: #e1d89f;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+    height: 325px;
 }
 
 .contactheader {
@@ -350,6 +366,48 @@ a:link{
 
 .bodytext {
     font-family: "Open Sans", sans-serif;
+}
+
+#paymentgrid{
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+
+.traderesults {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.paymentgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pleft{
+    grid-column: 2;
+}
+
+.paymentpic{
+    background-image: url(img/raptor.jpeg);
+    grid-column: 1;
+    height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    background-position: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+    .paymentpic{
+        height: 40vh;
+        margin-right: 4vw;
+    }
+    .paymentgrid{
+        display: inline;
+        height: 94vh;
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 750px) {
@@ -507,5 +565,3 @@ a:link{
     margin-top: -85px
 }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@300&display=swap');

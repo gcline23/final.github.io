@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@300&display=swap');
+
 .kid {
     display: flex;
     flex-direction: column;
@@ -96,6 +98,8 @@ h1 {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .nine {
@@ -121,7 +125,7 @@ h1 {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
-    font-family: "Monserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .eleven {
@@ -202,4 +206,3 @@ a:link{
 .resultsimgs{
     height: 30vh
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@300&display=swap');
