@@ -163,19 +163,7 @@ body{
     justify-content: space-between;
 }
 
-#contact{
-    color: #4BB3FD;
-    padding-top: 1.5vh;
-    font-size: 2vh;
-}
-
-#myfav{
-    color: #4BB3FD;
-    padding-top: 1.5vh;
-    font-size: 2vh;
-}
-
-#trade{
+.nav{
     color: #4BB3FD;
     padding-top: 1.5vh;
     font-size: 2vh;
@@ -205,4 +193,75 @@ a:link{
 
 .resultsimgs{
     height: 30vh
+}
+
+@media screen and (min-width: 0px) and (max-width: 650px) {
+    .grid-column-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 4fr 4fr 4fr 4fr 4fr 4fr;
+      }
+    
+    .seven {
+        display: flex;
+        justify-content: space-around;
+        background-color: grey;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 12px;
+    }
+    
+    .one {
+        display: grid;
+        grid-template-columns: 1fr 20fr 1fr;
+        grid-template-rows: 1fr 20fr 1fr;
+        background-color: grey;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .two {
+        display: grid;
+        grid-template-columns: 1fr 20fr 1fr;
+        grid-template-rows: 1fr 20fr 1fr;
+        background-color: grey;
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    .three {
+        display: grid;
+        grid-template-columns: 1fr 20fr 1fr;
+        grid-template-rows: 1fr 20fr 1fr;
+        background-color: grey;
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    
+    .four {
+        display: grid;
+        grid-template-columns: 1fr 20fr 1fr;
+        grid-template-rows: 1fr 20fr 1fr;
+        background-color: grey;
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    
+    .five {
+        display: grid;
+        grid-template-columns: 1fr 20fr 1fr;
+        grid-template-rows: 1fr 20fr 1fr;
+        background-color: grey;
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    
+    .six {
+        display: grid;
+        grid-template-columns: 1fr 20fr 1fr;
+        grid-template-rows: 1fr 20fr 1fr;
+        background-color: grey;
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
 }

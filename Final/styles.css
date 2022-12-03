@@ -11,21 +11,10 @@ body{
     justify-content: space-between;
 }
 
-#contact{
-    color: #4BB3FD;
-    padding-top: 1.5vh;
-    font-size: 2vh;
-}
 
-#myfav{
+.nav{
     color: #4BB3FD;
-    padding-top: 1.5vh;
-    font-size: 2vh;
-}
-
-#trade{
-    color: #4BB3FD;
-    padding-top: 1.5vh;
+    padding-top: .5vh;
     font-size: 2vh;
     align-items: center;
 }
